@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Girlfriends Day :D</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #ffd1dc);
+      color: #d63384;
+      overflow-x: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #ff69b4;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px #ffffffb3;
+    }
+
+    .subtext {
+      font-size: 1.3em;
+      margin-bottom: 40px;
+      color: #c71585;
+    }
+
+    .heart-btn {
+      background-color: #ff69b4;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    }
+
+    .heart-btn:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+    }
+
+    .floating-hearts {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .heart {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url('heart.png') no-repeat center/contain;
+      animation: float 6s infinite ease-in;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.3);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="floating-hearts">
+    <div class="heart" style="left:10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left:30%; animation-delay: 1s;"></div>
+    <div class="heart" style="left:50%; animation-delay: 2s;"></div>
+    <div class="heart" style="left:70%; animation-delay: 3s;"></div>
+    <div class="heart" style="left:90%; animation-delay: 4s;"></div>
+  </div>
+
+  <div class="container">
+    <h1>Happy National Girlfriends Day my love, i love you💕</h1>
+    <p class="subtext">You're my sun whose light rellects on my moon to make me shine bright, the one and only living in my heart 24/7, and the reason I smile every day :D</p>
+    <button class="heart-btn" onclick="goToSurprise()">Click for a Surprise 🎁</button>
+  </div>
+
+  <script>
+    function goToSurprise() {
+      window.location.href = "surprise.html"; // replace this with actual destination
+    }
+  </script>
+</body>
+</html>
